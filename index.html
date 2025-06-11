@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt Rush | Ultra-Powered Energy Drink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-volt-black fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <a href="#" class="text-3xl font-bold heading-font text-white">VOLT<span class="gradient-text">RUSH</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#flavors" class="text-white hover:text-volt-yellow transition-all duration-300 font-medium">FLAVORS</a>
+                    <a href="#ingredients" class="text-white hover:text-volt-yellow transition-all duration-300 font-medium">INGREDIENTS</a>
+                    <a href="#benefits" class="text-white hover:text-volt-yellow transition-all duration-300 font-medium">BENEFITS</a>
+                    <a href="#testimonials" class="text-white hover:text-volt-yellow transition-all duration-300 font-medium">REVIEWS</a>
+                    <button class="bg-gradient-to-r from-volt-yellow to-volt-red text-volt-black px-6 py-3 rounded-full font-bold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-lg">
+                        SHOP NOW
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-white p-2 rounded-full hover:bg-gray-800 transition">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-volt-black py-4 px-6 shadow-lg">
+            <a href="#flavors" class="block py-3 text-white hover:text-volt-yellow transition border-b border-gray-800 font-medium">FLAVORS</a>
+            <a href="#ingredients" class="block py-3 text-white hover:text-volt-yellow transition border-b border-gray-800 font-medium">INGREDIENTS</a>
+            <a href="#benefits" class="block py-3 text-white hover:text-volt-yellow transition border-b border-gray-800 font-medium">BENEFITS</a>
+            <a href="#testimonials" class="block py-3 text-white hover:text-volt-yellow transition border-b border-gray-800 font-medium">REVIEWS</a>
+            <button class="w-full mt-4 bg-gradient-to-r from-volt-yellow to-volt-red text-volt-black px-6 py-3 rounded-full font-bold hover:shadow-lg transition shadow-lg">
+                SHOP NOW
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-32 relative overflow-hidden bg-gradient-to-b from-volt-black to-gray-900">
+        <div class="lightning"></div>
+        <div class="lightning"></div>
+        <div class="lightning"></div>
+        
+        <div class="absolute top-0 left-0 right-0 bottom-0 z-0 opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-volt-yellow filter blur-3xl opacity-40 animate-pulse-slow"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-volt-red filter blur-3xl opacity-40 animate-pulse-slow"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <span class="inline-block px-4 py-2 text-sm font-bold bg-volt-yellow text-volt-black rounded-full mb-6 shadow-md">NEW LIMITED EDITION FLAVOR</span>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight heading-font text-white">
+                        <span class="gradient-text">POWER UP</span><br>
+                        <span class="text-white">WITH VOLT RUSH</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 max-w-lg">
+                        The ultimate energy boost with natural ingredients, zero sugar crash, and explosive flavor. Engineered for peak performance.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-2">
+                            <div class="w-full bg-gray-800 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-volt-yellow to-volt-red h-3 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <span class="ml-4 text-volt-yellow font-bold">75% SOLD OUT</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Hurry! Only <span class="font-bold text-volt-yellow">342</span> cases left in stock</p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-gradient-to-r from-volt-yellow to-volt-red text-volt-black px-8 py-4 rounded-full font-bold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-lg group">
+                            <span class="flex items-center justify-center">
+                                <span class="group-hover:animate-shake">BUY NOW - $2.99</span>
+                                <i class="fas fa-bolt ml-2"></i>
+                            </span>
+                        </button>
+                        <button class="border-2 border-volt-yellow text-volt-yellow px-8 py-4 rounded-full font-bold hover:bg-volt-yellow hover:bg-opacity-10 transition group">
+                            <span class="flex items-center justify-center">
+                                <i class="fas fa-play-circle mr-2 group-hover:text-volt-red"></i> WATCH VIDEO
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="mt-8 flex flex-wrap items-center gap-6">
+                        <div class="flex items-center">
+                            <div class="flex -space-x-2">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-volt-yellow" alt="User">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full border-2 border-volt-yellow" alt="User">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" class="w-10 h-10 rounded-full border-2 border-volt-yellow" alt="User">
+                            </div>
+                            <span class="ml-3 text-sm text-gray-400">Trusted by <span class="font-bold text-volt-yellow">500,000+</span> customers</span>
+                        </div>
+                        
+                        <div class="flex items-center space-x-2 bg-gray-800 bg-opacity-50 px-4 py-2 rounded-full">
+                            <i class="fas fa-star text-volt-yellow"></i>
+                            <span class="font-bold text-white">4.9</span>
+                            <span class="text-gray-400">(2,458 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center relative">
+                    <div class="relative w-full max-w-md">
+                        <div class="energy-burst -top-20 -right-20"></div>
+                        <div class="energy-burst -bottom-20 -left-20"></div>
+                        
+                        <img src="https://i.imgur.com/JQz7m2P.png" alt="Volt Rush Energy Drink Can" 
+                             class="w-full max-w-xs mx-auto can-tilt animate-float cursor-pointer"
+                             id="hero-can">
+                        
+                        <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-volt-yellow rounded-full filter blur-3xl opacity-10 z-0"></div>
+                        <div class="absolute -top-10 -right-10 w-64 h-64 bg-volt-red rounded-full filter blur-3xl opacity-10 z-0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="energy-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section class="py-16 bg-volt-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 heading-font neon-text">FEEL THE ENERGY</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Watch how Volt Rush powers athletes, creators, and professionals</p>
+            </div>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-gray-900 rounded-xl">
+                    <div class="text-4xl font-bold heading-font text-volt-yellow mb-2">150mg</div>
+                    <div class="text-gray-400">Natural Caffeine</div>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl">
+                    <div class="text-4xl font-bold heading-font text-volt-yellow mb-2">0g</div>
+                    <div class="text-gray-400">Sugar</div>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl">
+                    <div class="text-4xl font-bold heading-font text-volt-yellow mb-2">10</div>
+                    <div class="text-gray-400">Essential Vitamins</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavor Section -->
+    <section id="flavors" class="py-16 bg-volt-yellow relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white filter blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-volt-red filter blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 heading-font text-volt-black">EXPLOSIVE FLAVORS</h2>
+                <p class="text-volt-black max-w-2xl mx-auto text-lg">Each flavor delivers the same powerful energy boost with unique taste experiences</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="flavor-card bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 text-center relative">
+                    <div class="flavor-badge">BEST<br>SELLER</div>
+                    <div class="w-48 h-48 mx-auto mb-6 flex items-center justify-center">
+                        <img src="https://i.imgur.com/JQz7m2P.png" alt="Original Flavor" class="w-full h-full object-contain hover:animate-shake">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 heading-font">ORIGINAL RUSH</h3>
+                    <p class="text-gray-600 mb-4">Classic energy flavor with a citrus twist and electrifying finish</p>
+                    <div class="flex justify-center space-x-2 mb-6">
+                        <div class="w-6 h-6 rounded-full bg-yellow-400 shadow-md"></div>
+                        <div class="w-6 h-6 rounded-full bg-red-500 shadow-md"></div>
+                        <div class="w-6 h-6 rounded-full bg-blue-500 shadow-md"></div>
+                    </div>
+                    <button class="w-full bg-volt-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-900 transition transform hover:scale-105">
+                        SHOP NOW - $2.99
+                    </button>
+                </div>
+                
+                <div class="flavor-card bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 text-center relative">
+                    <div class="flavor-badge">NEW</div>
+                    <div class="w-48 h-48 mx-auto mb-6 flex items-center justify-center">
+                        <img src="https://i.imgur.com/JQz7m2P.png" alt="Berry Blast" class="w-full h-full object-contain hover:animate-shake" style="filter: hue-rotate(240deg);">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 heading-font">BERRY BLAST</h3>
+                    <p class="text-gray-600 mb-4">Mixed berry explosion with a sweet finish and energizing kick</p>
+                    <div class="flex justify-center space-x-2 mb-6">
+                        <div class="w-6 h-6 rounded-full bg-pink-500 shadow-md"></div>
+                        <div class="w-6 h-6 rounded-full bg-purple-500 shadow-md"></div>
+                        <div class="w-6 h-6 rounded-full bg-blue-400 shadow-md"></div>
+                    </div>
+                    <button class="w-full bg-volt-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-900 transition transform hover:scale-105">
+                        SHOP NOW - $2.99
+                    </button>
+                </div>
+                
+                <div class="flavor-card bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 text-center relative">
+                    <div class="flavor-badge">LIMITED</div>
+                    <div class="w-48 h-48 mx-auto mb-6 flex items-center justify-center">
+                        <img src="https://i.imgur.com/JQz7m2P.png" alt="Tropical Thunder" class="w-full h-full object-contain hover:animate-shake" style="filter: hue-rotate(120deg);">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 heading-font">TROPICAL THUNDER</h3>
+                    <p class="text-gray-600 mb-4">Exotic fruit blend with a tangy kick and smooth finish</p>
+                    <div class="flex justify-center space-x-2 mb-6">
+                        <div class="w-6 h-6 rounded-full bg-green-400 shadow-md"></div>
+                        <div class="w-6 h-6 rounded-full bg-orange-500 shadow-md"></div>
+                        <div class="w-6 h-6 rounded-full bg-yellow-400 shadow-md"></div>
+                    </div>
+                    <button class="w-full bg-volt-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-900 transition transform hover:scale-105">
+                        SHOP NOW - $3.49
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <button class="inline-flex items-center px-8 py-4 bg-volt-black text-white rounded-full font-bold hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group">
+                    <span>VIEW ALL FLAVORS</span>
+                    <i class="fas fa-chevron-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 heading-font">POWERFUL INGREDIENTS</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Clean energy without the crash. No artificial preservatives or high fructose corn syrup.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="relative">
+                    <div class="bg-volt-yellow bg-opacity-10 rounded-3xl p-8">
+                        <img src="https://i.imgur.com/JQz7m2P.png" alt="Volt Rush Can" class="w-full max-w-md mx-auto animate-float">
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-volt-red rounded-full filter blur-3xl opacity-20 z-0"></div>
+                </div>
+                
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-12 h-12 bg-volt-yellow bg-opacity-20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-bolt text-2xl text-volt-yellow"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2 heading-font">NATURAL CAFFEINE</h3>
+                                <p class="text-gray-600">150mg from green tea extract provides sustained energy without jitters or crash</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-12 h-12 bg-volt-blue bg-opacity-20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-leaf text-2xl text-volt-blue"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2 heading-font">B VITAMINS</h3>
+                                <p class="text-gray-600">Essential for energy metabolism, brain function, and reducing fatigue</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-12 h-12 bg-volt-red bg-opacity-20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-tint text-2xl text-volt-red"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2 heading-font">ELECTROLYTES</h3>
+                                <p class="text-gray-600">Sodium, potassium, and magnesium for hydration and muscle function</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-12 h-12 bg-green-500 bg-opacity-20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-apple-alt text-2xl text-green-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2 heading-font">ANTIOXIDANTS</h3>
+                                <p class="text-gray-600">From real fruit extracts to support immune function and recovery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-volt-black rounded-3xl p-8 md:p-12 text-white">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 heading-font">NUTRITION FACTS</h3>
+                        <p class="text-gray-300 mb-6">Volt Rush is keto-friendly, vegan, and contains only 10 calories per serving</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-900 p-4 rounded-xl">
+                                <div class="text-sm text-gray-400 mb-1">Calories</div>
+                                <div class="text-2xl font-bold text-volt-yellow">10</div>
+                            </div>
+                            <div class="bg-gray-900 p-4 rounded-xl">
+                                <div class="text-sm text-gray-400 mb-1">Caffeine</div>
+                                <div class="text-2xl font-bold text-volt-yellow">150mg</div>
+                            </div>
+                            <div class="bg-gray-900 p-4 rounded-xl">
+                                <div class="text-sm text-gray-400 mb-1">Sugar</div>
+                                <div class="text-2xl font-bold text-volt-yellow">0g</div>
+                            </div>
+                            <div class="bg-gray-900 p-4 rounded-xl">
+                                <div class="text-sm text-gray-400 mb-1">Carbs</div>
+                                <div class="text-2xl font-bold text-volt-yellow">2g</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                        <h4 class="font-bold mb-3 text-volt-yellow">INGREDIENTS</h4>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Carbonated Water, Natural Flavors, Citric Acid, Green Tea Extract (Caffeine), 
+                            Sodium Citrate, Potassium Phosphate, Magnesium Lactate, Stevia Leaf Extract, 
+                            Niacinamide (Vitamin B3), Calcium Pantothenate (Vitamin B5), Pyridoxine Hydrochloride 
+                            (Vitamin B6), Cyanocobalamin (Vitamin B12)
+                        </p>
+                        <h4 class="font-bold mb-3 text-volt-yellow">ALLERGENS</h4>
+                        <p class="text-sm text-gray-300">None</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-volt-black text-white parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1517438476312-10d79c077509?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <div class="bg-volt-black bg-opacity-90 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4 heading-font neon-text">UNLOCK YOUR POTENTIAL</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Volt Rush is engineered for peak performance when you need it most</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 bg-opacity-80 p-8 rounded-2xl backdrop-blur-sm border border-gray-800 hover:border-volt-yellow transition-all duration-300">
+                        <div class="w-16 h-16 bg-volt-yellow rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-brain text-3xl text-volt-black"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 heading-font">MENTAL FOCUS</h3>
+                        <p class="text-gray-300 mb-4">Sharpens concentration and reaction time for maximum productivity and clarity</p>
+                        <div class="h-1 bg-gray-800 mb-4">
+                            <div class="h-1 bg-volt-yellow" style="width: 90%"></div>
+                        </div>
+                        <div class="text-sm text-gray-400">Focus Duration: 4-6 hours</div>
+                    </div>
+                    
+                    <div class="bg-gray-900 bg-opacity-80 p-8 rounded-2xl backdrop-blur-sm border border-gray-800 hover:border-volt-red transition-all duration-300">
+                        <div class="w-16 h-16 bg-volt-red rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-running text-3xl text-volt-black"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 heading-font">PHYSICAL ENERGY</h3>
+                        <p class="text-gray-300 mb-4">Sustained energy release without jitters or crash, perfect for workouts</p>
+                        <div class="h-1 bg-gray-800 mb-4">
+                            <div class="h-1 bg-volt-red" style="width: 85%"></div>
+                        </div>
+                        <div class="text-sm text-gray-400">Energy Duration: 5-7 hours</div>
+                    </div>
+                    
+                    <div class="bg-gray-900 bg-opacity-80 p-8 rounded-2xl backdrop-blur-sm border border-gray-800 hover:border-volt-blue transition-all duration-300">
+                        <div class="w-16 h-16 bg-volt-blue rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-heartbeat text-3xl text-volt-black"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 heading-font">FASTER RECOVERY</h3>
+                        <p class="text-gray-300 mb-4">Electrolytes help replenish what you lose during activity and reduce fatigue</p>
+                        <div class="h-1 bg-gray-800 mb-4">
+                            <div class="h-1 bg-volt-blue" style="width: 80%"></div>
+                        </div>
+                        <div class="text-sm text-gray-400">Recovery Speed: 30% faster</div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 bg-gradient-to-r from-volt-yellow to-volt-red p-0.5 rounded-2xl">
+                    <div class="bg-volt-black rounded-2xl p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-4 heading-font">PERFORMANCE TIMELINE</h3>
+                        <div class="max-w-3xl mx-auto">
+                            <div class="relative h-2 bg-gray-800 rounded-full mb-8">
+                                <div class="absolute h-2 bg-gradient-to-r from-volt-yellow to-volt-red rounded-full" style="width: 100%"></div>
+                            </div>
+                            <div class="grid grid-cols-5 gap-4 text-sm">
+                                <div>
+                                    <div class="w-3 h-3 bg-volt-yellow rounded-full mx-auto mb-2"></div>
+                                    <div class="font-medium">0-15 min</div>
+                                    <div class="text-gray-400">Quick absorption</div>
+                                </div>
+                                <div>
+                                    <div class="w-3 h-3 bg-volt-yellow rounded-full mx-auto mb-2"></div>
+                                    <div class="font-medium">15-30 min</div>
+                                    <div class="text-gray-400">Energy kicks in</div>
+                                </div>
+                                <div>
+                                    <div class="w-3 h-3 bg-orange-500 rounded-full mx-auto mb-2"></div>
+                                    <div class="font-medium">1-3 hours</div>
+                                    <div class="text-gray-400">Peak performance</div>
+                                </div>
+                                <div>
+                                    <div class="w-3 h-3 bg-volt-red rounded-full mx-auto mb-2"></div>
+                                    <div class="font-medium">3-5 hours</div>
+                                    <div class="text-gray-400">Sustained energy</div>
+                                </div>
+                                <div>
+                                    <div class="w-3 h-3 bg-volt-blue rounded-full mx-auto mb-2"></div>
+                                    <div class="font-medium">5-7 hours</div>
+                                    <div class="text-gray-400">Gradual decline</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 heading-font">POWERING PERFORMANCE</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">Trusted by athletes, students, and professionals worldwide</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-500">1 week ago</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"I drink Volt Rush before every workout. The energy is clean and lasts through my entire session without any crash afterward. The Berry Blast flavor is incredible!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full mr-4 border-2 border-volt-yellow" alt="Jessica M.">
+                        <div>
+                            <h4 class="font-medium">Jessica M.</h4>
+                            <p class="text-sm text-gray-500">Fitness Trainer • 5/5 Rating</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-500">3 days ago</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"As a software developer, I need to stay focused for long hours. Volt Rush gives me the mental clarity without the jitters of coffee. Original Rush is my go-to flavor."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full mr-4 border-2 border-volt-yellow" alt="David K.">
+                        <div>
+                            <h4 class="font-medium">David K.</h4>
+                            <p class="text-sm text-gray-500">Software Engineer • 5/5 Rating</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star-half-alt text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-500">2 weeks ago</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"The Tropical Thunder flavor is amazing! I've tried every energy drink out there and Volt Rush is the only one that doesn't leave me feeling drained later. Perfect for late-night study sessions."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-12 h-12 rounded-full mr-4 border-2 border-volt-yellow" alt="Alex P.">
+                        <div>
+                            <h4 class="font-medium">Alex P.</h4>
+                            <p class="text-sm text-gray-500">College Student • 4.5/5 Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white rounded-2xl shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold heading-font">VOLT RUSH IN ACTION</h3>
+                    <p class="text-gray-600">See how professionals use Volt Rush to power their performance</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden">
+                        <div class="h-48 bg-volt-yellow flex items-center justify-center">
+                            <i class="fas fa-dumbbell text-5xl text-volt-black"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold mb-2 heading-font">FITNESS</h4>
+                            <p class="text-gray-600 text-sm">Pre-workout boost for gym sessions and endurance training</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-100 rounded-xl overflow-hidden">
+                        <div class="h-48 bg-volt-blue flex items-center justify-center">
+                            <i class="fas fa-laptop-code text-5xl text-volt-black"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold mb-2 heading-font">WORK</h4>
+                            <p class="text-gray-600 text-sm">Sustained focus for long work hours and creative sessions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-100 rounded-xl overflow-hidden">
+                        <div class="h-48 bg-volt-red flex items-center justify-center">
+                            <i class="fas fa-book-open text-5xl text-volt-black"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold mb-2 heading-font">STUDY</h4>
+                            <p class="text-gray-600 text-sm">Enhanced concentration for exams and late-night study</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-volt-black via-volt-purple to-volt-red text-white relative overflow-hidden">
+        <div class="lightning"></div>
+        <div class="lightning"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 heading-font neon-text">READY TO EXPERIENCE THE RUSH?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join the energy revolution with zero sugar, no artificial junk, and maximum performance</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+                <button class="bg-volt-yellow text-volt-black px-8 py-4 rounded-full font-bold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-lg group">
+                    <span class="flex items-center justify-center">
+                        <span class="group-hover:animate-shake">BUY SINGLE CAN - $2.99</span>
+                        <i class="fas fa-bolt ml-2"></i>
+                    </span>
+                </button>
+                <button class="bg-volt-black border-2 border-volt-yellow text-volt-yellow px-8 py-4 rounded-full font-bold hover:bg-volt-yellow hover:text-volt-black transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-lg">
+                    <span class="flex items-center justify-center">
+                        BUY 12-PACK - $29.99 (SAVE 15%)
+                    </span>
+                </button>
+            </div>
+            
+            <div class="inline-flex items-center bg-volt-black bg-opacity-50 px-6 py-3 rounded-full border border-gray-700">
+                <i class="fas fa-shipping-fast text-volt-yellow mr-2"></i>
+                <span>FREE SHIPPING on orders over $30</span>
+            </div>
+            
+            <div class="mt-12 grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-volt-yellow bg-opacity-20 rounded-full flex items-center justify-center">
+                        <i class="fas fa-check text-volt-yellow"></i>
+                    </div>
+                    <span>100% Satisfaction</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-volt-yellow bg-opacity-20 rounded-full flex items-center justify-center">
+                        <i class="fas fa-bolt text-volt-yellow"></i>
+                    </div>
+                    <span>Instant Energy</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-volt-yellow bg-opacity-20 rounded-full flex items-center justify-center">
+                        <i class="fas fa-leaf text-volt-yellow"></i>
+                    </div>
+                    <span>Natural Ingredients</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-volt-yellow bg-opacity-20 rounded-full flex items-center justify-center">
+                        <i class="fas fa-recycle text-volt-yellow"></i>
+                    </div>
+                    <span>Recyclable Can</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-volt-black text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div>
+                    <h3 class="text-white font-medium mb-4 heading-font">PRODUCT</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-volt-yellow transition">All Flavors</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Nutrition Facts</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Where to Buy</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Merchandise</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4 heading-font">COMPANY</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-volt-yellow transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">News</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4 heading-font">SUPPORT</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-volt-yellow transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Shipping</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Returns</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4 heading-font">LEGAL</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-volt-yellow transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">Accessibility</a></li>
+                        <li><a href="#" class="hover:text-volt-yellow transition">CA Transparency</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4 heading-font">CONNECT</h3>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-volt-yellow hover:text-volt-black transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-volt-yellow hover:text-volt-black transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-volt-yellow hover:text-volt-black transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-volt-yellow hover:text-volt-black transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <h4 class="text-white font-medium mb-2 heading-font">NEWSLETTER</h4>
+                    <p class="text-sm mb-3">Get exclusive offers and updates</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 bg-gray-800 text-white rounded-l focus:outline-none w-full focus:ring-2 focus:ring-volt-yellow">
+                        <button class="bg-volt-yellow text-volt-black px-4 rounded-r hover:bg-yellow-500 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold heading-font text-white">VOLT<span class="gradient-text">RUSH</span></a>
+                    <span class="mx-2">•</span>
+                    <span>© 2023 Volt Rush Energy. All rights reserved.</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <img src="https://www.apple.com/ac/globalfooter/7/en_US/assets/ac-buystrip/payment-methods/icon-amex.svg" class="h-6" alt="Amex">
+                    <img src="https://www.apple.com/ac/globalfooter/7/en_US/assets/ac-buystrip/payment-methods/icon-visa.svg" class="h-6" alt="Visa">
+                    <img src="https://www.apple.com/ac/globalfooter/7/en_US/assets/ac-buystrip/payment-methods/icon-mastercard.svg" class="h-6" alt="Mastercard">
+                    <img src="https://www.apple.com/ac/globalfooter/7/en_US/assets/ac-buystrip/payment-methods/icon-paypal.svg" class="h-6" alt="PayPal">
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <script src="./script.js"></script>
+</body>
+</html>
